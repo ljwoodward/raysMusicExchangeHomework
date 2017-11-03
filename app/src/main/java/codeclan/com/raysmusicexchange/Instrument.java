@@ -6,15 +6,13 @@ package codeclan.com.raysmusicexchange;
 
 public abstract class Instrument implements Playable {
 
-    private String name;
-    private String material;
-    private String colour;
+    private String name;private String colour;
     private InstrumentFamily type;
+    private SoundType elecacoust;
 
-    public Instrument(String name, String material, String colour, InstrumentFamily type){
+    public Instrument(String name, InstrumentFamily type, SoundType elecacoust){
         this.name = name;
-        this.material = material;
-        this.colour = colour;
         this.type = type;
+        this.elecacoust = elecacoust;
     }
 }
