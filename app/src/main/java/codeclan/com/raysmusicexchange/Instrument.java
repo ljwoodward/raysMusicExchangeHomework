@@ -6,7 +6,7 @@ package codeclan.com.raysmusicexchange;
 
 public abstract class Instrument implements Playable {
 
-    private String name;private String colour;
+    private String name;
     private InstrumentFamily type;
     private SoundType elecacoust;
 

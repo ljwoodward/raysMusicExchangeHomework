@@ -5,7 +5,13 @@ package codeclan.com.raysmusicexchange;
  */
 
 public abstract class Guitar extends Instrument implements Playable {
-    public Guitar(String name, String material, String colour, InstrumentFamily type) {
+
+    private int numberOfStrings;
+    private GuitarType guitarType;
+
+    public Guitar(String name, String material, String colour, InstrumentFamily type, int numberOfStrings, GuitarType guitarType) {
         super(name, material, colour, type);
+        this.numberOfStrings = numberOfStrings;
+        this.guitarType = guitarType;
     }
 }
