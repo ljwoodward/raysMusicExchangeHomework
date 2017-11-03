@@ -8,11 +8,11 @@ public abstract class Instrument implements Playable {
 
     private String name;
     private InstrumentFamily type;
-    private SoundType elecacoust;
+    private SoundType soundType;
 
-    public Instrument(String name, InstrumentFamily type, SoundType elecacoust){
+    public Instrument(String name, InstrumentFamily type, SoundType soundType){
         this.name = name;
         this.type = type;
-        this.elecacoust = elecacoust;
+        this.soundType = soundType;
     }
 }
