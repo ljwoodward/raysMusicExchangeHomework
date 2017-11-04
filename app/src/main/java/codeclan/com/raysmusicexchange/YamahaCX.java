@@ -10,10 +10,11 @@ public class YamahaCX extends Piano implements Sellable, Playable {
     private double buyPrice;
     private double sellPrice;
 
-    public YamahaCX(String name, InstrumentFamily type, SoundType soundType, PianoType pianoType, String description, double buyPrice) {
+    public YamahaCX(String name, InstrumentFamily type, SoundType soundType, PianoType pianoType, String description, double buyPrice, double sellPrice) {
         super(name, type, soundType, pianoType);
         this.description = description;
         this.buyPrice = buyPrice;
+        this.sellPrice = sellPrice;
     }
 
     public String play() {
@@ -24,4 +25,5 @@ public class YamahaCX extends Piano implements Sellable, Playable {
     public double calculateMarkup() {
         return 0;
     }
+
 }

@@ -7,12 +7,16 @@ package codeclan.com.raysmusicexchange;
 public abstract class Instrument implements Playable {
 
     private String name;
-    private InstrumentFamily type;
-    private SoundType soundType;
+    protected InstrumentFamily type;
+    protected SoundType soundType;
 
     public Instrument(String name, InstrumentFamily type, SoundType soundType){
         this.name = name;
         this.type = type;
         this.soundType = soundType;
+    }
+
+    public String getName() {
+        return name;
     }
 }

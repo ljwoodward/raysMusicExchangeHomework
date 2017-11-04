@@ -5,7 +5,7 @@ package codeclan.com.raysmusicexchange;
  */
 
 public abstract class Piano extends Instrument implements Playable {
-    private PianoType pianoType;
+    protected PianoType pianoType;
 
     public Piano(String name, InstrumentFamily type, SoundType soundType, PianoType pianoType) {
         super(name, type, soundType);
