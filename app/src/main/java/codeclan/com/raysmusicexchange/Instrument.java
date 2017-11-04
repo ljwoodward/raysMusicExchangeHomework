@@ -19,4 +19,7 @@ public abstract class Instrument implements Playable {
     public String getName() {
         return name;
     }
+
+    public abstract double calculateMarkup();
+
 }
