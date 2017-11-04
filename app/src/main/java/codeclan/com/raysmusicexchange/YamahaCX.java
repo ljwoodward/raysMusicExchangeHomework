@@ -23,7 +23,7 @@ public class YamahaCX extends Piano implements Sellable, Playable {
     }
 
     public double calculateMarkup() {
-        return 0;
+        return this.sellPrice -= this.buyPrice;
     }
 
 }

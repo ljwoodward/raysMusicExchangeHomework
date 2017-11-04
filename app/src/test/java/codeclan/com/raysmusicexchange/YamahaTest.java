@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class YamahaTest {
 
-    Instrument yamaha;
+    YamahaCX yamaha;
 
     @Before
     public void before() {
@@ -29,5 +29,10 @@ public class YamahaTest {
     @Test
     public void hasName(){
         assertEquals("newYamaha", yamaha.getName());
+    }
+
+    @Test
+    public void testCalculateMarkup(){
+        assertEquals(499.99, yamaha.calculateMarkup());
     }
 }
