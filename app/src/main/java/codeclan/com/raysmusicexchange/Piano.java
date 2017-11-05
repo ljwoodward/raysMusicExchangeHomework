@@ -9,6 +9,7 @@ public abstract class Piano extends Instrument implements Playable {
 
     public Piano(String name, InstrumentFamily type, SoundType soundType, PianoType pianoType) {
         super(name, type, soundType);
+        this.type = InstrumentFamily.STRING;
         this.pianoType = pianoType;
     }
 }

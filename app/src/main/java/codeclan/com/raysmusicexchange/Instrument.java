@@ -6,7 +6,9 @@ package codeclan.com.raysmusicexchange;
 
 public abstract class Instrument implements Playable {
 
-    private String name;
+    protected String name;
+
+
     protected InstrumentFamily type;
     protected SoundType soundType;
 
@@ -19,6 +21,15 @@ public abstract class Instrument implements Playable {
     public String getName() {
         return name;
     }
+
+    public InstrumentFamily getType() {
+        return type;
+    }
+
+    public SoundType getSoundType() {
+        return soundType;
+    }
+
 
     public abstract double calculateMarkup();
 

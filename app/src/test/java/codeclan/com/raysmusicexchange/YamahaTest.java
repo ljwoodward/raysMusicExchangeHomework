@@ -26,23 +26,6 @@ public class YamahaTest {
                         "series of grand pianos that builds on the legacy of Yamaha’s CFX concert grand piano.",
                 1500.00,
                 1999.99);
-        piano2 = new YamahaCX("piano2",
-                InstrumentFamily.KEYBOARD,
-                SoundType.ACCOUSTIC,
-                PianoType.BABYGRAND,
-                "Crisp attack. Sparkling tone. Clean harmonies. This is the birth of a new " +
-                        "series of grand pianos that builds on the legacy of Yamaha’s CFX concert grand piano.",
-                1500.00,
-                1999.99);
-        piano3 = new YamahaCX(
-                "piano3",
-                InstrumentFamily.KEYBOARD,
-                SoundType.ACCOUSTIC,
-                PianoType.BABYGRAND,
-                "Crisp attack. Sparkling tone. Clean harmonies. This is the birth of a new " +
-                        "series of grand pianos that builds on the legacy of Yamaha’s CFX concert grand piano.",
-                1500.00,
-                1999.99);
     }
 
     @Test
